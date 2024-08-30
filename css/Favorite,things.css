@@ -367,7 +367,7 @@ nav a:hover {
 }
 
 .Photo-image {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 5px;
 }
