@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+/* 基本スタイル */
+body {
+    background-image: url('images/space.png'); /* 背景画像を設定 */
+    background-size: cover; /* 背景画像を画面全体にカバー */
+    background-position: center; /* 背景画像の位置を中央に */
+    background-attachment: fixed; /* スクロールしても背景が固定される */
+    background-repeat: no-repeat; /* 背景画像を繰り返さない */
+    height: 300vh; /* ビューポート全体の高さを設定 */
+    overflow: hidden; /* ボディ全体のスクロールを防ぐ */
+}
+
+/* メインコンテンツのラッパーにスクロールバーを追加 */
+main {
+    height: calc(100vh - 100px); /* ヘッダーとフッターの高さを除いたエリア */
+    overflow-y: scroll; /* 縦スクロールを許可 */
+}
+
+/* スクロールバーのスタイル */
+main::-webkit-scrollbar {
+    width: 10px;
+}
+
+main::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+main::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* ヘッダー */
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* 透明度を持たせた背景 */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul.nav-list li {
+    margin: 0 15px;
+}
+
+nav ul.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul.nav-list li a:hover {
+    text-decoration: underline;
+}
+
+/* ゲームセクション */
+.games-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.game {
+    background-color: rgba(255, 255, 255, 0.9); /* 透明度を持たせた背景で、文字が見やすい */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.game h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.game-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.game-description {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.game-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.game-link:hover {
+    background-color: #0056b3;
+}
+.game:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    }
+    
+
+/* フッター */
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* 透明度を持たせた背景 */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* ゲームセクション */
+.games-section {
+    display: flex;
+    flex-wrap: wrap; /* 自動的に折り返す */
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Night sky background */
+.night-sky-background {
+    height: 100vh;
+    background-image: url('images/night-sky.jpg'); /* Replace with your night sky background image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    height: 100%; /* 全体の高さを100%に設定 */
+}
+
+
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.star {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: twinkle 5s infinite;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.shooting-star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: shoot 5s linear infinite;
+}
+
+@keyframes shoot {
+    0% { transform: translate(0, 0); opacity: 1; }
+    100% { transform: translate(300px, 300px); opacity: 0; }
+}
+
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+    overflow-y: auto; /* メインコンテンツ内でスクロール可能にする */
+    max-height: calc(100vh - 200px); /* ヘッダーとフッターの高さを考慮して調整 */
+}
+
+
+.game {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.game-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+
+
+
+

@@ -1,0 +1,367 @@
+@charset "UFT-8";
+
+/* 共通部分
+-------------------------------------------------------*/
+html {
+  font-size: 100%;
+}
+
+
+
+
+h1{
+  color:rgb(250, 250, 250);
+  text-align:center;
+  font-size:100px;
+
+  .bebas-neue-regular {
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+  }
+
+}
+
+.scroll-container {
+    width: 100%;
+    height: 100vh; /* 全画面の高さに設定 */
+
+    overflow-y: scroll; /* 縦スクロールを有効にする */
+    overflow:hidden;
+
+    background-size: cover; /* 画像をコンテナ全体にカバー */
+    background-repeat: no-repeat; /* 画像の繰り返しを無効にする */
+}
+----------------------------------------
+.main-section h1 {
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: #333
+}
+.section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  unicode-bidi: isolate;
+}
+
+
+body {
+
+
+    /*見出し*/
+    font-family: "Hiragino kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    font-weight: normal;
+    line-height: 1.7;
+    color:azure;
+    font-size: 20px;
+
+    background-color: rgb(255, 255, 255);
+    background-position:top;
+    
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      justify-content: center;
+
+    /*ヘッダー
+    --------------------------------------------------------*/
+    .page-header {
+      padding-top: .5rem;
+    }
+    .main-nav{
+      display: flex;
+      justify-content: center;
+      gap: 5rem;
+      font-size: 1.5rem;
+      list-style: none;
+    }
+    .main-nav a {
+      color: #ffff
+    }
+
+  .main-nav a:hover {
+    color: 0bd;
+  }
+
+  /* mainセクションのスタイル */
+main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  /* フォームを中央揃えにする */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* ラベルと入力フィールドのスタイル */
+form label {
+  width: 100%;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color:#333 /*ラベルのテキスト色を設定*/
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff; /* 背景色を設定 */
+    color: #333; /* テキスト色を設定 */
+    font-size: 16px; /* テキストのサイズを設定 */
+}
+
+/* ボタンのスタイル */
+form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+
+/* フッターのスタイル */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+      .round-button {
+        display: inline-block;
+          width: 500px;
+          height: 500px;
+          border-radius: 50%;
+
+        position:relative;
+          left: 100px;
+
+        background-color: #31177f; /* 青緑色（シアン） */
+        color: white;
+
+        text-decoration: none;
+        text-align: center;
+
+          line-height: 200px; /* 高さと同じ値にして縦方向中央揃え */
+          font-size: 50px;
+        font-family: Arial, sans-serif;
+        transition: background-color 0.3s ease;
+      }
+      
+      .round-button:hover {
+        background-color: #cc0000; /* ホバー時に少し暗くする */
+      -webkit-translateY:(4px);
+      transform: translateY(4px);/*下に動く*/
+      border-bottom: none;
+      }
+
+      .b-button {
+        display: inline-block;
+          width: 500px;
+          height: 500px;
+          border-radius: 50%;
+
+        position:relative;
+          left: 200px;
+
+        background-color: #2b1177; /* 青緑色（シアン） */
+        color: white;
+
+        text-decoration: none;
+        text-align: center;
+
+          line-height: 200px; /* 高さと同じ値にして縦方向中央揃え */
+          font-size: 50px;
+        font-family: Arial, sans-serif;
+        transition: background-color 0.3s ease;
+        
+      }
+
+      .b-button:hover  {
+      background-color: #cc0000; /* ホバー時に少し暗くする */
+      -webkit-translateY:(4px);
+      transform: translateY(4px);/*下に動く*/
+      border-bottom: none;
+      } 
+
+      .c-button {
+        display: inline-block;
+          width: 500px;
+          height: 500px;
+          border-radius: 50%;
+
+        position:relative;
+          left:300px;
+
+        background-color: #2b1177; /* 青緑色（シアン） */
+        color: white;
+
+        text-decoration: none;
+        text-align: center;
+        
+        line-height: 200px; /* 高さと同じ値にして縦方向中央揃え */
+        font-size: 50px;
+        font-family: Arial, sans-serif;
+
+        transition: background-color 0.3s ease;
+      }
+      
+      .c-button:hover  {
+        background-color: #cc0000; /* ホバー時に少し暗くする */
+        -webkit-translateY:(4px);
+        transform: translateY(4px);/*下に動く*/
+        border-bottom: none;
+        } 
+        
+      .d-button {
+        display: inline-block;
+          width: 500px;
+          height: 500px;
+          border-radius: 50%;
+
+        position: relative;
+          left: 400px;
+
+        background-color: #2b1177; /* 青緑色（シアン） */
+        color: white;
+
+        text-decoration: none;
+        text-align: center;
+
+        line-height: 200px; /* 高さと同じ値にして縦方向中央揃え */
+        font-size: 50px;
+        font-family: Arial, sans-serif;
+          transition: background-color 0.3s ease;
+        }
+
+      .d-button:hover  {
+        background-color: #cc0000; /* ホバー時に少し暗くする */
+        -webkit-translateY:(4px);
+        transform: translateY(4px);/*下に動く*/
+        border-bottom: none;
+          } 
+      }
+
+      /* 既存のスタイルをここに保持 */
+
+/* 背景のアニメーション */
+@keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+
+#space {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0c0d21 url('http://www.script-tutorials.com/demos/360/images/stars.png') repeat top center;
+  z-index: -1;
+}
+
+#stars, #stars2, #stars3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#stars {
+  background: transparent url('http://www.script-tutorials.com/demos/360/images/stars.png') repeat top center;
+  z-index: 0;
+  animation: move-twink-back 200s linear infinite;
+}
+
+#stars2 {
+  background: transparent url('http://www.script-tutorials.com/demos/360/images/stars2.png') repeat top center;
+  z-index: 1;
+  animation: move-twink-back 150s linear infinite;
+}
+
+#stars3 {
+  background: transparent url('http://www.script-tutorials.com/demos/360/images/stars3.png') repeat top center;
+  z-index: 2;
+  animation: move-twink-back 100s linear infinite;
+}
+
+.introduction {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#name {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+#major {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+#bio {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+

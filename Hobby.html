@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="料理とゲームの紹介ページ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies Hub</title>
+    <link rel="stylesheet" href="css/Hobby.css">
+</head>
+<body>
+    <div id="space">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+    <header>
+        <h1>Hobbies Hub</h1>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Games.html">Games</a></li>
+                <li><a href="Hobby.html">Hobby</a></li>
+                <li><a href="Anime.html">Anime</a></li>
+                <li><a href="Favorite,things.html">Fvorite,things</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>My hobbies</h2>
+            <p>
+                私の趣味はゲームと料理です。最近やっているゲームは以下のとおりです。
+            </p>
+            <p>
+                料理は、基本的に健康食材に気を使いながら作っています。
+                おすすめのアプリは、'クックパッド'、'クラシル'を使っています。
+            </p>
+        </section>
+
+        <section id="cooking">
+            <h2>料理のレシピ</h2>
+            <div class="recipe-container">
+                <!-- Recipe entries will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="games">
+            <h2>最近やっているゲーム</h2>
+            <div class="game-container">
+                <!-- Game entries will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hobbies Hub</p>
+    </footer>
+
+    <script src="js/Hobby.js"></script>
+</body>
+</html>

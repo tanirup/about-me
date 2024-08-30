@@ -2,12 +2,102 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="自分の好きなことの紹介">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-		ここに内容を作成
+    <div id="space">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <div class="content fade-in-up">
+        <h1>MYSELF-INTRODUCTION</h1>
+
+        <nav>
+            <ul class="main-nav font-english">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Games.html">Games</a></li>
+                <li><a href="Hobby.html">Hobby</a></li>
+                <li><a href="Anime.html">Anime</a></li>
+                <li><a href="Favorite,things.html">Favorite things</a></li>
+            </ul>
+        </nav>
+
+                <div class="circle">
+                    <div class="introduction fade-in">
+                        <h2 id="name" class="fade-in-item">谷内勇樹</h2>
+                        <h3 id="major" class="fade-in-item">ホワイトハッカー専攻</h3>
+                        <p id="bio" class="fade-in-item">こんにちは、これは私の自己紹介サイトです。</p>
+                        <p>
+                        自己紹介サイトでは、ゲーム、趣味、アニメ、好きなもの、を紹介していきたいと思います。
+                        </p>
+                        <p>
+                        普段は、ゲーム、バイト、筋トレ、勉強などのルーティング生活を送っています。
+                        </p>
+                        <p>年齢:19</p>
+                        <p>出身:富山県</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- YouTube動画の埋め込み -->
+        <div class="youtube-embed fade-in">
+            <h2>おすすめの動画</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LMYIam2RFkg?si=tB0HNYI8P6ELeRaP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Hie1ZtyqOys?si=lgw1WPGvVXkITcaq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0RN2Y47z7KA?si=iJzKt3ZfshU0fqIe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LhJ6PR7d3bM?si=N20-IwnMFpOZNaGK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZwY5gxcWuUM?si=fIiHc2AzgzigvEwd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/q5O8O_kwtTk?si=_8BipKDDThUmaRYi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/Ps_boNCz348?si=pxFpvfziyc7XEEQG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/48h57PspBec?si=yVHkh5jfaifODQcN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+
+
+
+
+        </div>
+
+        <main>
+            <section class="main-section">
+                <h1 class="fade-in">お問い合わせ</h1>
+                <form>
+                    <label for="name">名前:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">メールアドレス:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">メッセージ:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">送信</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>お問い合わせは以下の連絡先まで</p>
+                <ul>
+                    <li>discord: moka#8288</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
     <script src="js/scripts.js"></script>
 </body>
 </html>

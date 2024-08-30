@@ -1,0 +1,336 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c0c2a;
+    color: #ffffff;
+        /* 既存の背景スタイル */
+        background-color: #0c0c2a;
+        background-image: 
+            radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+            radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+            radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+            radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+        background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+        background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    
+        /* 新しい背景グラデーションを追加 */
+        background-image: 
+            linear-gradient(to bottom, #0f0c29, #302b63, #24243e),
+            radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+            radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+            radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+            radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+        background-blend-mode: overlay;
+    
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    overflow: hidden;
+}
+
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    border-radius: 50%;
+    animation: twinkle 5s infinite;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffd700;
+}
+
+.anime-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.anime-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.anime-item:hover {
+    transform: scale(1.05);
+}
+
+.anime-title {
+    font-size: 1.2em;
+    color: #ffd700;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.shooting-star {
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: shootingStar 5s linear infinite;
+}
+
+@keyframes shootingStar {
+    0% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100vw) translateY(100vh);
+        opacity: 0;
+    }
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #ffffff;
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+#space {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0c0d21 url('http://www.script-tutorials.com/demos/360/images/stars.png') repeat top center;
+    z-index: -1;
+}
+
+#stars, #stars2, #stars3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#stars {
+    background: transparent url('http://www.script-tutorials.com/demos/360/images/stars.png') repeat top center;
+    z-index: 0;
+    animation: move-twink-back 200s linear infinite;
+}
+
+#stars2 {
+    background: transparent url('http://www.script-tutorials.com/demos/360/images/stars2.png') repeat top center;
+    z-index: 1;
+    animation: move-twink-back 150s linear infinite;
+}
+
+#stars3 {
+    background: transparent url('http://www.script-tutorials.com/demos/360/images/stars3.png') repeat top center;
+    z-index: 2;
+    animation: move-twink-back 100s linear infinite;
+}
+
+/* 既存のコンテンツを背景の上に表示するために */
+.container {
+    position: relative;
+    z-index: 10;
+}
+
+/* Section styles */
+#intro {
+    padding: 20px;
+    background-color: rgba(40, 17, 87, 0.8); /* 背景色を追加 */
+    border-radius: 8px; /* 角を丸くする */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 軽いシャドウを追加 */
+    margin: 20px 0;
+    text-align: center; /* 中央揃え */
+}
+
+#intro p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 10px; /* セクション内のパラグラフ間のスペースを追加 */
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    animation: slide 40s linear infinite;
+}
+
+.slider img {
+    width: 700px;
+    height: 500px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+.slider-container:hover .slider {
+    animation-play-state: paused;
+}
+
+/* 背景のアニメーション */
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+  }
+  
+  #space {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0c0d21 url('http://www.script-tutorials.com/demos/360/images/stars.png') repeat top center;
+    z-index: -1;
+  }
+  
+  #stars, #stars2, #stars3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  #stars {
+    background: transparent url('http://www.script-tutorials.com/demos/360/images/stars.png') repeat top center;
+    z-index: 0;
+    animation: move-twink-back 200s linear infinite;
+  }
+  
+  #stars2 {
+    background: transparent url('http://www.script-tutorials.com/demos/360/images/stars2.png') repeat top center;
+    z-index: 1;
+    animation: move-twink-back 150s linear infinite;
+  }
+  
+  #stars3 {
+    background: transparent url('http://www.script-tutorials.com/demos/360/images/stars3.png') repeat top center;
+    z-index: 2;
+    animation: move-twink-back 100s linear infinite;
+  }
+  
+  .introduction {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .fade-in-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fade-in-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  #name {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  #major {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #ffd700;
+  }
+  
+  #bio {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  
+  
