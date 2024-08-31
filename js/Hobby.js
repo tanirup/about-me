@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener('DOMContentLoaded', () => {
     const games = [
         {
-            title: "Honkai: Star Rail",
+            title: "Honkai Star Rail",
             image: "images/game4.png",
             description: "壮大なSF世界を旅するターン制RPG。多彩なキャラクターとストーリーが魅力。",
         },
